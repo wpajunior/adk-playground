@@ -151,7 +151,7 @@ def get_sop_step(sop_id: str, step: int) -> str:
     sop.add_node(node)
 
     node = Node(4, NodeType.ACTION_EXECUTION)
-    node.content = "Tell the customer that you are very sorry for the inconvenience and continue to step 5."
+    node.content = "Tell the customer that you are very sorry for the inconvenience, and execute the step 5."
     sop.add_node(node)
 
     node = Node(5, NodeType.USER_INPUT)
